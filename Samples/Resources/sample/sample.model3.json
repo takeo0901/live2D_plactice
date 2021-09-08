@@ -1,0 +1,44 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "sample.moc3",
+		"Textures": [
+			"sample.2048/texture_00.png"
+		],
+		"Physics": "sample.physics3.json",
+		"DisplayInfo": "sample.cdi3.json",
+		"Motions": {
+			"Idle": [
+			  {"File":"motion/sample_idle.motion3.json" ,"FadeInTime":0.5, "FadeOutTime":0.5}
+			],
+			"TapBody": [
+			  {"File":"motion/bye.motion3.json" ,"FadeInTime":0, "FadeOutTime":0},
+			  {"File":"motion/Go.motion3.json" ,"FadeInTime":0, "FadeOutTime":0},
+			  {"File":"motion/shock.motion3.json" ,"FadeInTime":0, "FadeOutTime":0},
+			  {"File":"motion/window.motion3.json" ,"FadeInTime":0, "FadeOutTime":0}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": [
+		{
+			"Name": "Head",
+			"Id": "HitArea_head"
+		},
+		{
+			"Name": "Body",
+			"Id": "HitArea_body"
+		}
+	]
+}
